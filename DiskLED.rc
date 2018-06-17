@@ -1,0 +1,310 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DiskLED.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+IDR_MAINFRAME           ICON                    "res\\Main.ico"
+IDI_ICON6               ICON                    "res\\icon6.ico"
+IDI_ICON7               ICON                    "res\\icon7.ico"
+IDI_ICON8               ICON                    "res\\icon8.ico"
+IDI_ICON9               ICON                    "res\\icon9.ico"
+IDI_ICON10              ICON                    "res\\icon10.ico"
+IDI_ICON11              ICON                    "res\\icon11.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 250, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DiskLED"
+FONT 10, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,192,114,50,14
+    ICON            IDI_ICON5,IDC_ABOUT_ICON1,12,12,18,16
+    CONTROL         "DiskLED by Helge Klein (<a href=""http://blogs.sepago.de/helge/"" target=""_blank"">http://blogs.sepago.de/helge/</a>)",IDC_SYSLINK_URL1,
+                    "SysLink",WS_TABSTOP,48,18,192,12
+    CONTROL         "<a href=""http://blogs.sepago.de/tools/category/diskled/"" target=""_blank"">http://blogs.sepago.de/tools/category/diskled/</a>",IDC_SYSLINK_URL2,
+                    "SysLink",WS_TABSTOP,48,48,192,12
+    LTEXT           "Homepage of DiskLED:",IDC_TEXT2,48,36,104,8
+    ICON            IDI_ICON4,IDC_ABOUT_ICON2,12,30,18,16
+    ICON            IDI_ICON3,IDC_ABOUT_ICON3,12,48,18,16
+    ICON            IDI_ICON2,IDC_ABOUT_ICON4,12,66,18,16
+    ICON            IDI_ICON1,IDC_ABOUT_ICON5,12,84,18,16
+    LTEXT           "DiskLED is a flexible system activity indicator applet for the system tray. It can display data from any performance counter. By default, it displays disk activity by flickering, just as the physical hard disk LED in many computer cases.",IDC_TEXT3,48,66,192,42,0,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 345, 388
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "DiskLED Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Select data source:",IDC_STATIC,7,7,328,212
+    LTEXT           "&Object:",IDC_COUNTERPATH_TEXT2,17,21,25,8
+    COMBOBOX        IDC_PERF_OBJECTS,17,33,305,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Counter:",IDC_COUNTERPATH_TEXT3,17,53,30,8
+    COMBOBOX        IDC_PERF_COUNTERS,17,65,305,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Instance:",IDC_COUNTERPATH_TEXT4,17,85,32,8
+    COMBOBOX        IDC_PERF_INSTANCES,17,97,305,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Description:",IDC_COUNTERPATH_TEXT5,17,117,39,8
+    EDITTEXT        IDC_PERF_DESCRIPTION,17,130,305,59,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Build path from &selection",IDC_USE_SELECTED_DATA_SOURCE,17,195,112,14
+    LTEXT           "&Performance counter path used as data source:",IDC_COUNTERPATH_TEXT,7,229,154,8
+    EDITTEXT        IDC_COUNTERPATH_EDIT,7,239,226,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "In order to be able to calculate system activity, DiskLED needs to know which value from the performance counter path shown above is equivalent to 100% utilization.",IDC_100PERCENT_TEXT,7,258,226,26
+    LTEXT           "&100% utilization:",IDC_100PERCENT_TEXT2,7,287,55,8
+    EDITTEXT        IDC_100PERCENT_EDIT,75,285,30,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "How often should DiskLED get new performance data and update its icon? Enter a value in milliseconds for the interval between consecutive updates.",IDC_100PERCENT_TEXT3,7,301,226,26
+    LTEXT           "Update &frequency:",IDC_UPDATEFREQUENCY_TEXT1,7,330,62,8
+    EDITTEXT        IDC_UPDATEFREQUENCY_EDIT,75,328,30,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_UPDATEFREQUENCY_TEXT2,107,330,10,8
+    GROUPBOX        "Icon type:",IDC_GROUP_LEDTYPE,257,229,78,80
+    CONTROL         "&LED",IDC_RADIO_LEDTYPE1,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_CENTER | BS_VCENTER | WS_GROUP | WS_TABSTOP,275,238,54,32
+    CONTROL         "&Bar",IDC_RADIO_LEDTYPE2,"Button",BS_AUTORADIOBUTTON | BS_ICON | BS_CENTER | BS_VCENTER | WS_TABSTOP,275,270,54,32
+    CONTROL         "&Update the INI file when applying settings",IDC_UPDATE_INI,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,184,350,151,10
+    PUSHBUTTON      "&Default values",IDC_DEFAULTVALUES,7,367,65,14
+    DEFPUSHBUTTON   "OK",IDOK,170,367,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,367,50,14
+    PUSHBUTTON      "&Apply",IDC_APPLY,285,367,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DIALOG_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        VERTGUIDE, 17
+        VERTGUIDE, 75
+        VERTGUIDE, 100
+        VERTGUIDE, 110
+        VERTGUIDE, 167
+        VERTGUIDE, 233
+        VERTGUIDE, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 381
+        HORZGUIDE, 25
+        HORZGUIDE, 37
+        HORZGUIDE, 57
+        HORZGUIDE, 69
+        HORZGUIDE, 89
+        HORZGUIDE, 101
+        HORZGUIDE, 121
+        HORZGUIDE, 219
+        HORZGUIDE, 229
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "POPUP_MENU"
+    BEGIN
+        MENUITEM "&Configure...",               ID_POPUP_CONFIGURE
+        MENUITEM "&About DiskLED...",           ID_POPUP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_POPUP_EXIT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Exit",                       ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Helge Klein"
+            VALUE "FileDescription", "Hard disk activity LED"
+            VALUE "FileVersion", "1.1"
+            VALUE "InternalName", "DiskLED.exe"
+            VALUE "LegalCopyright", "(c) Helge Klein.  All rights reserved."
+            VALUE "OriginalFilename", "DiskLED.exe"
+            VALUE "ProductName", "DiskLED"
+            VALUE "ProductVersion", "1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLTIP_LEDTYPE1    "A flickering LED icon, similar to a real hard disk LED."
+    IDS_TOOLTIP_LEDTYPE2    "A percentage bar similar to what Task Manager uses."
+    IDS_TOOLTIP_UPDATE_FREQUENCY 
+                            "How often to update the display (in milliseconds)"
+    IDS_TOOLTIP_UPDATE_INI  "Update the INI configuration file when applying settings?"
+    IDS_TOOLTIP_DEFAULT_VALUES "Restore default values?"
+    IDS_TOOLTIP_100PERCENT  "Which performance counter value corresponds to 100% utilization?"
+    IDS_TOOLTIP_COUNTERPATH "From the selection above, build a performance counter path"
+    IDS_TOOLTIP_DESCRIPTION "Description of the selected counter"
+    IDS_TOOLTIP_OBJECTS     "Select a performance object"
+    IDS_TOOLTIP_COUNTERS    "Select a performance object's counter"
+    IDS_TOOLTIP_INSTANCES   "Selece a performance counter instance"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DiskLED.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

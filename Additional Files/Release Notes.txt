@@ -1,0 +1,19 @@
+Release notes for DiskLED by Helge Klein, https://helgeklein.com
+
+DiskLED homepage: https://helgeklein.com/free-tools/
+
+#### Version 1.1.1 ####
+
+- Fixed a bug: When the taskbar was moved, DiskLED stopped updating the tray icon. Maybe this also happened when the resolution was changed.
+
+#### Version 1.1.0 ####
+
+- Added a graphical configuration dialog, accessible by right-clicking the icon in the taskbar
+  - The dialog lets you choose from any performance counter found on the local system
+  - Now everything is configurable both from a GUI and an INI file
+- Added a nicer about dialog
+- Whenever there is a problem displaying data, the icon changes to a red exclamation mark
+
+#### Version 1.0.0 ####
+
+- Initial version
